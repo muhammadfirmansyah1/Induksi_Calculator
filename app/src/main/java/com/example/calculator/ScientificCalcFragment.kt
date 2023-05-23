@@ -45,9 +45,9 @@ class ScientificCalcFragment : Fragment() {
         binding.apply {
             clearAll.setOnClickListener{
                 calcVM.setInput("")
-                calcVM.output.value = ""
+                calcVM.output.value = "0"
                 input  = ""
-                output = ""
+                output = "0"
 
                 Toast.makeText(requireContext(), "test", Toast.LENGTH_SHORT).show()
             }

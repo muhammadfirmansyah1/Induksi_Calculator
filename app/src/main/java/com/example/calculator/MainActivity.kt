@@ -44,9 +44,6 @@ class MainActivity : AppCompatActivity() {
                 }
             })
         })
-
-
-
     }
 
     private fun fragmentCalls(fragment : Fragment){
