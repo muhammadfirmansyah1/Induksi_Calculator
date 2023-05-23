@@ -160,15 +160,12 @@ class ScientificCalcFragment : Fragment() {
             if(result.isNaN()){
                 output = "Error"
                 calcVM.output.value = output
-                Toast.makeText(requireContext(), "23", Toast.LENGTH_SHORT).show()
             } else {
                 output = DecimalFormat("0.#######").format(result)
                 calcVM.output.value = output
-                Toast.makeText(requireContext(), "87", Toast.LENGTH_SHORT).show()
             }
         } catch (e : Exception){
             output = "Error"
-            Toast.makeText(requireContext(), "testtt", Toast.LENGTH_SHORT).show()
         }
     }
 
